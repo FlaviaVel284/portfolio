@@ -1,0 +1,18 @@
+@import url("https://fonts.cdnfonts.com/css/mrs-saint-delafield");
+
+.intro_container {
+  margin-top: 5rem;
+  height: 70vh;
+}
+
+.flavia {
+  width: 20rem;
+  border-radius: 50%;
+}
+
+.intro_text {
+  font-family: "Mrs Saint Delafield", sans-serif;
+  font-size: 300px;
+  color: var(--bright-pink-crayola);
+  transform: translateY(-15rem);
+}

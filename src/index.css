@@ -1,13 +1,28 @@
+:root {
+  --space-cadet: #34344aff;
+  --cool-gray: #8d99aeff;
+  --bright-pink-crayola: #ef798aff;
+  --caribbean-current: #0f7173ff;
+  --tea-green: #ccf5acff;
+  --background: #ede4e5;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Raleway" sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,
+html {
+  font-family: "Raleway";
+  color: var(--space-cadet);
+  font-size: 24px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 4rem;
+  color: var(--space-cadet);
 }

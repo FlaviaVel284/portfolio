@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rem;
+}
+
+.hello_text {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: left;
+}

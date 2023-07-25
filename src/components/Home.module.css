@@ -2,13 +2,33 @@
   display: flex;
   flex-direction: column;
   margin-left: 10rem;
+  width: 70vw;
 }
 
 .hello_text {
   display: flex;
   flex-direction: column;
+  margin-bottom: 4rem;
 }
 
 h1 {
   text-align: left;
+  margin-bottom: 4rem;
+}
+
+.paragraph {
+  width: 60rem;
+  text-align: justify;
+  margin-bottom: 4rem;
+  width: 70vw;
+}
+
+p {
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+p.section_title {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
 }

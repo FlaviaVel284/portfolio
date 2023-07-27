@@ -1,0 +1,8 @@
+.container {
+  margin-bottom: 5rem;
+}
+
+.swiper {
+  width: 100vw;
+  transform: translateX(-13.5vw);
+}

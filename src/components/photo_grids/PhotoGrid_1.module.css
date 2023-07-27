@@ -1,0 +1,41 @@
+.container {
+  margin-bottom: 5rem;
+  display: flex;
+  align-self: center;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vh;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  border-radius: 10px;
+  width: 20vw;
+  height: 30vh;
+}
+
+.div2 {
+  grid-area: 2 / 1 / 3 / 2;
+  border-radius: 10px;
+  width: 20vw;
+  height: 30vh;
+}
+
+.div3 {
+  grid-area: 1 / 2 / 3 / 3;
+  border-radius: 10px;
+  width: 30vw;
+  height: 61vh;
+}
+
+.div4 {
+  grid-area: 1 / 3 / 3 / 4;
+  border-radius: 10px;
+  width: 20vw;
+  height: 61vh;
+}

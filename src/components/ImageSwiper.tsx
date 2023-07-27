@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import styles from "./ImageSwiper.module.css";
 
 // Import Swiper styles
 import "swiper/css";
@@ -16,22 +17,23 @@ const ImageSwiper: React.FunctionComponent<ImageSwiperProps> = ({
   illustrations,
 }) => {
   return (
-    <>
+    <div className={styles.container}>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={"auto"}
+        slidesPerView={5}
         coverflowEffect={{
-          rotate: 50,
+          rotate: 30,
           stretch: 0,
-          depth: 100,
+          depth: 80,
           modifier: 1,
-          slideShadows: true,
+          slideShadows: false,
         }}
+        initialSlide={2}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
+        className={styles.swiper}
       >
         {illustrations.map((image) => (
           <SwiperSlide>
@@ -39,7 +41,7 @@ const ImageSwiper: React.FunctionComponent<ImageSwiperProps> = ({
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </div>
   );
 };
 

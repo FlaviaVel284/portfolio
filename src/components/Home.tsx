@@ -1,5 +1,6 @@
 import styles from "./Home.module.css";
 import ImageSwiper from "./ImageSwiper";
+import PhotoDuo from "./photo_layouts/PhotoDuo";
 import PhotoGrid_1 from "./photo_layouts/PhotoGrid_1";
 import PhotoList from "./photo_layouts/PhotoList";
 
@@ -23,6 +24,11 @@ const LIST_ILLUSTRATIONS: string[] = [
   "/images/poster_2.png",
   "/images/poster_3.png",
   "/images/poster_4.png",
+];
+
+const DUO_ILLUSTRATIONS: string[] = [
+  "/images/tumblr.png",
+  "/images/smart_ret.png",
 ];
 
 const Home: React.FunctionComponent = () => {
@@ -66,6 +72,39 @@ const Home: React.FunctionComponent = () => {
         </div>{" "}
       </div>
       <PhotoList illustrations={LIST_ILLUSTRATIONS} />
+      <p className={`${styles.section_title} ${styles.mid}`}>
+        BUSINESS CONCEPTS{" "}
+      </p>
+      <PhotoDuo illustrations={DUO_ILLUSTRATIONS} />
+      <div className={`${styles.container} ${styles.end}`}>
+        <div className={styles.paragraph}>
+          Thank you for taking the time to explore my portfolio and delve into
+          the artistic journey I have embarked upon. I hope that through this
+          visual odyssey, you have gained a glimpse into my creative spirit, my
+          passion for design, and my dedication to crafting captivating visual
+          experiences.
+        </div>{" "}
+        <button className={styles.portfolio}>EXPLORE MY PORTFOLIO</button>
+        <div className={styles.paragraph}>
+          Please feel free to reach out to me with any inquiries, ideas, or
+          opportunities to collaborate. I am eager to continue this artistic
+          voyage and look forward to the possibility of working together to
+          shape the visual landscape in extraordinary ways.
+        </div>
+        <p className={`${styles.section_title} ${styles.mid}`}>
+          LET’S GET IN CONTACT{" "}
+        </p>
+        <div className={styles.site_links}>
+          {" "}
+          <img src="/images/behance_big.svg" />
+          <img src="/images/instagram_big.svg" />
+          <img src="/images/mail.svg" />
+          <img src="/images/dribbble.svg" />
+        </div>
+        <div className={styles.contact}>+40 755 590 208</div>{" "}
+        <div className={styles.contact}>flavia.velcsov@yahoo.com</div>
+      </div>{" "}
+      <img className={styles.end_curve} src="/images/end_curve.svg" />
     </>
   );
 };

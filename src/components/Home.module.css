@@ -28,10 +28,46 @@ p {
 }
 
 p.section_title {
-  font-size: 1.4rem;
+  font-size: 2rem;
   margin-bottom: 4rem;
 }
 
 .section_title.right {
   text-align: end;
+}
+
+.mid {
+  text-align: center;
+}
+
+button.portfolio {
+  align-self: center;
+  width: 15rem;
+  height: 8rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--bright-pink-crayola);
+  color: white;
+  margin-bottom: 4rem;
+}
+
+.site_links {
+  margin: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10vw;
+  margin-bottom: 6rem;
+}
+
+.contact {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.end_curve {
+  width: 100vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }

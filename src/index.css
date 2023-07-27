@@ -5,6 +5,7 @@
   --caribbean-current: #0f7173ff;
   --tea-green: #ccf5acff;
   --background: #ede4e5;
+  scrollbar-color: var(--background);
 }
 
 body {
@@ -12,6 +13,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Raleway" sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+  overflow-x: hidden;
 }
 
 body,
@@ -25,4 +28,17 @@ h1 {
   font-weight: 400;
   font-size: 4rem;
   color: var(--space-cadet);
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--bright-pink-crayola);
+}
+
+button {
+  font-family: "Raleway";
 }

@@ -1,6 +1,7 @@
 import styles from "./Home.module.css";
 import ImageSwiper from "./ImageSwiper";
-import PhotoGrid_1 from "./photo_grids/PhotoGrid_1";
+import PhotoGrid_1 from "./photo_layouts/PhotoGrid_1";
+import PhotoList from "./photo_layouts/PhotoList";
 
 const ILLUSTRATIONS: string[] = [
   "/images/illustrations/i_girl_1.png",
@@ -17,36 +18,55 @@ const GRID_1_ILLUSTRATIONS: string[] = [
   "/images/cristal-postersmall-1.png",
 ];
 
+const LIST_ILLUSTRATIONS: string[] = [
+  "/images/poster_1.png",
+  "/images/poster_2.png",
+  "/images/poster_3.png",
+  "/images/poster_4.png",
+];
+
 const Home: React.FunctionComponent = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.hello_text}>
-        {" "}
-        <h1>
-          HELLO, I’M <br />
-          FLAVIA VELCSOV
-        </h1>
-        <div className={styles.paragraph}>
-          A passionate <b>graphic designer</b> with a relentless drive to
-          transform ideas into captivating visual experiences. With a boundless
-          imagination and a keen eye for detail, I strive to leave a lasting
-          impression through my creative designs.
-        </div>
-        <p>I do</p>
-        <p className={styles.section_title}>ILLUSTRATIONS</p>
-        <ImageSwiper illustrations={ILLUSTRATIONS} />
-        <div className={styles.paragraph}>
-          Having a passion for art since a young age has always been an integral
-          part of who I am. From the moment I picked up a pencil and started
-          doodling, I knew I had discovered a profound connection to the world
-          of creativity and self-expression.
-        </div>
-        <p className={`${styles.section_title} ${styles.right}`}>
-          ABSTRACT ART
-        </p>
-        <PhotoGrid_1 illustrations={GRID_1_ILLUSTRATIONS}></PhotoGrid_1>
+    <>
+      <div className={styles.container}>
+        <div className={styles.hello_text}>
+          {" "}
+          <h1>
+            HELLO, I’M <br />
+            FLAVIA VELCSOV
+          </h1>
+          <div className={styles.paragraph}>
+            A passionate <b>graphic designer</b> with a relentless drive to
+            transform ideas into captivating visual experiences. With a
+            boundless imagination and a keen eye for detail, I strive to leave a
+            lasting impression through my creative designs.
+          </div>
+          <p>I do</p>
+          <p className={styles.section_title}>ILLUSTRATIONS</p>
+          <ImageSwiper illustrations={ILLUSTRATIONS} />
+          <div className={styles.paragraph}>
+            Having a passion for art since a young age has always been an
+            integral part of who I am. From the moment I picked up a pencil and
+            started doodling, I knew I had discovered a profound connection to
+            the world of creativity and self-expression.
+          </div>
+          <p className={`${styles.section_title} ${styles.right}`}>
+            ABSTRACT ART
+          </p>
+          <PhotoGrid_1 illustrations={GRID_1_ILLUSTRATIONS}></PhotoGrid_1>
+          <div className={styles.paragraph}>
+            Art has always been my sanctuary—a realm where I can freely explore
+            my imagination, experiment with colors and shapes, and unleash my
+            innermost emotions. My interest in digital art prompted me to
+            experiment with different tools, including Adobe Illustrator, Adobe
+            Photoshop, Krita, and also some 3D software, such as Cinema 4D,
+            Blender.
+          </div>
+          <p className={styles.section_title}>POSTERS </p>
+        </div>{" "}
       </div>
-    </div>
+      <PhotoList illustrations={LIST_ILLUSTRATIONS} />
+    </>
   );
 };
 

@@ -1,8 +1,8 @@
 import styles from "./Home.module.css";
-import ImageSwiper from "./ImageSwiper";
-import PhotoDuo from "./photo_layouts/PhotoDuo";
-import PhotoGrid_1 from "./photo_layouts/PhotoGrid_1";
-import PhotoList from "./photo_layouts/PhotoList";
+import ImageSwiper from "../photo_layouts/ImageSwiper";
+import PhotoDuo from "../photo_layouts/PhotoDuo";
+import PhotoGrid_1 from "../photo_layouts/PhotoGrid_1";
+import PhotoList from "../photo_layouts/PhotoList";
 
 const ILLUSTRATIONS: string[] = [
   "/images/illustrations/i_girl_1.png",
@@ -71,7 +71,7 @@ const Home: React.FunctionComponent = () => {
           <p className={styles.section_title}>POSTERS </p>
         </div>{" "}
       </div>
-      <PhotoList illustrations={LIST_ILLUSTRATIONS} />
+      <PhotoList illustrations={LIST_ILLUSTRATIONS} line={true} />
       <p className={`${styles.section_title} ${styles.mid}`}>
         BUSINESS CONCEPTS{" "}
       </p>

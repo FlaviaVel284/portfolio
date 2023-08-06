@@ -1,0 +1,165 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.start_curve {
+  width: 100vw;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+  position: absolute;
+  z-index: 1;
+}
+
+.title {
+  font-size: 3rem;
+  position: absolute;
+  margin: auto;
+  z-index: 2;
+  text-align: center;
+  margin-top: 18vh;
+}
+
+p.section_title {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  z-index: 2;
+  margin-top: 50vh;
+  margin-bottom: 10vh;
+  width: 70vw;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10vw;
+}
+
+.text_intro {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 20vh;
+}
+
+.flavia {
+  width: 20rem;
+  border-radius: 50%;
+}
+
+.paragraph {
+  text-align: justify;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 70vw;
+  gap: 10vh;
+}
+
+.photo_pair {
+  margin-bottom: 20vh;
+  align-self: start;
+  align-content: center;
+}
+
+.afis1 {
+  z-index: 1;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.afis2 {
+  z-index: 2;
+  transform: translateX(-40%) translateY(70%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.photo_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10vh;
+}
+
+.paragraph.half {
+  display: flex;
+  width: 25vw;
+  margin-top: 20vh;
+  align-items: center;
+}
+
+.tools {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.design_tools {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+}
+
+.hashtag {
+  opacity: 0.6;
+  width: 110vw;
+  align-self: center;
+}
+
+.section_title.mid {
+  text-align: center;
+}
+
+button.portfolio {
+  align-self: center;
+  width: 15rem;
+  height: 8rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--bright-pink-crayola);
+  color: white;
+  margin-bottom: 4rem;
+}
+
+.site_links {
+  margin: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10vw;
+  margin-bottom: 6rem;
+}
+
+.contact {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.end_curve {
+  width: 100vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}

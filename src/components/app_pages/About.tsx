@@ -1,3 +1,4 @@
+import PageTitle from "../PageTitle";
 import PhotoList from "../photo_layouts/PhotoList";
 import styles from "./About.module.css";
 
@@ -13,11 +14,7 @@ const About: React.FunctionComponent = () => {
     <>
       {" "}
       <div className={styles.container}>
-        <div className={styles.title_container}>
-          {" "}
-          <img className={styles.start_curve} src="/images/curve_2.svg" />
-          <div className={styles.title}>ABOUT ME</div>
-        </div>
+      <PageTitle>ABOUT ME</PageTitle>
         <div className={styles.about}>
           <div className={styles.intro}>
             {" "}

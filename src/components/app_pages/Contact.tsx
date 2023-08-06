@@ -1,13 +1,10 @@
+import PageTitle from "../PageTitle";
 import styles from "./Contact.module.css";
 
 const Contact: React.FunctionComponent = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.title_container}>
-        {" "}
-        <img className={styles.start_curve} src="/images/curve_2.svg" />
-        <div className={styles.title}>CONTACT</div>
-      </div>
+      <PageTitle>CONTACT</PageTitle>
       <div className={styles.contact}>
         <div className={styles.contact_item}>
           <img className={styles.logo} src="/images/behance_big.svg" />

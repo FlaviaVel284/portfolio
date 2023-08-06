@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery_container {
+  margin-top: 50vh;
+  width: 70vw;
+  align-self: center;
+}
+
+.end_curve {
+  width: 100vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  z-index: 1;
+}

@@ -3,6 +3,8 @@ import ImageSwiper from "../photo_layouts/ImageSwiper";
 import PhotoDuo from "../photo_layouts/PhotoDuo";
 import PhotoGrid_1 from "../photo_layouts/PhotoGrid_1";
 import PhotoList from "../photo_layouts/PhotoList";
+import { Link } from "react-router-dom";
+import Intro from "./Intro";
 
 const ILLUSTRATIONS: string[] = [
   "/images/illustrations/i_girl_1.png",
@@ -34,6 +36,7 @@ const DUO_ILLUSTRATIONS: string[] = [
 const Home: React.FunctionComponent = () => {
   return (
     <>
+      <Intro />
       <div className={styles.container}>
         <div className={styles.hello_text}>
           {" "}
@@ -84,7 +87,12 @@ const Home: React.FunctionComponent = () => {
           passion for design, and my dedication to crafting captivating visual
           experiences.
         </div>{" "}
-        <button className={styles.portfolio}>EXPLORE MY PORTFOLIO</button>
+        <Link to="/portfolio">
+          {" "}
+          <button type="button" className={styles.portfolio}>
+            EXPLORE MY PORTFOLIO
+          </button>
+        </Link>
         <div className={styles.paragraph}>
           Please feel free to reach out to me with any inquiries, ideas, or
           opportunities to collaborate. I am eager to continue this artistic
@@ -96,10 +104,30 @@ const Home: React.FunctionComponent = () => {
         </p>
         <div className={styles.site_links}>
           {" "}
-          <img src="/images/behance_big.svg" />
-          <img src="/images/instagram_big.svg" />
-          <img src="/images/mail.svg" />
-          <img src="/images/dribbble.svg" />
+          <Link
+            to="https://www.behance.net/v_flavia99"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <img src="/images/behance_big.svg" />
+          </Link>{" "}
+          <Link
+            to="https://www.instagram.com/fla_v_art/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <img src="/images/instagram_big.svg" />{" "}
+          </Link>
+          <Link
+            to="https://dribbble.com/v_flavia99"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <img src="/images/dribbble.svg" />
+          </Link>
         </div>
         <div className={styles.contact}>+40 755 590 208</div>{" "}
         <div className={styles.contact}>flavia.velcsov@yahoo.com</div>

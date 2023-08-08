@@ -42,3 +42,8 @@ body::-webkit-scrollbar-thumb {
 button {
   font-family: "Raleway";
 }
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: var(--space-cadet);
+}

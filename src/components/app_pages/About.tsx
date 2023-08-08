@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PageTitle from "../PageTitle";
 import PhotoList from "../photo_layouts/PhotoList";
 import styles from "./About.module.css";
@@ -14,7 +15,7 @@ const About: React.FunctionComponent = () => {
     <>
       {" "}
       <div className={styles.container}>
-      <PageTitle>ABOUT ME</PageTitle>
+        <PageTitle>ABOUT ME</PageTitle>
         <div className={styles.about}>
           <div className={styles.intro}>
             {" "}
@@ -106,7 +107,12 @@ const About: React.FunctionComponent = () => {
             <br />
             Look no further – you've come to the right place!{" "}
           </p>
-          <button className={styles.portfolio}>EXPLORE MY PORTFOLIO</button>
+          <Link to="/portfolio">
+            {" "}
+            <button type="button" className={styles.portfolio}>
+              EXPLORE MY PORTFOLIO
+            </button>
+          </Link>
           <div className={styles.end}>
             {" "}
             <p className={`${styles.section_title} ${styles.mid}`}>
@@ -114,10 +120,30 @@ const About: React.FunctionComponent = () => {
             </p>
             <div className={styles.site_links}>
               {" "}
-              <img src="/images/behance_big.svg" />
-              <img src="/images/instagram_big.svg" />
-              <img src="/images/mail.svg" />
-              <img src="/images/dribbble.svg" />
+              <Link
+                to="https://www.behance.net/v_flavia99"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img src="/images/behance_big.svg" />
+              </Link>{" "}
+              <Link
+                to="https://www.instagram.com/fla_v_art/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img src="/images/instagram_big.svg" />{" "}
+              </Link>
+              <Link
+                to="https://dribbble.com/v_flavia99"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img src="/images/dribbble.svg" />
+              </Link>
             </div>
             <div className={styles.contact}>+40 755 590 208</div>{" "}
             <div className={styles.contact}>flavia.velcsov@yahoo.com</div>
